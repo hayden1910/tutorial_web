@@ -1,56 +1,52 @@
+// NodeList =   Static collection of HTML elements by (id, class, element)
+//              Can be created by using querySelectorAll()
+//              Similar to an array, but no (map, filter, reduce)
+//              NodeList won't update to automatically reflect changes
 
+let buttons = document.querySelectorAll(".myButtons");
 
-        // NodeList =   Static collection of HTML elements by (id, class, element)
-        //              Can be created by using querySelectorAll()
-        //              Similar to an array, but no (map, filter, reduce)
-        //              NodeList won't update to automatically reflect changes
+// Add html/css properties
+// buttons.forEach(button => {
+//     button.style.backgroundColor = "green";
+//     button.textContent += "😁";
+// });
 
-        let buttons = document.querySelectorAll(".myButtons");
+// click event listener
+buttons.forEach(button => {
+    button.addEventListener("click", event => {
+        event.target.style.backgroundColor = "tomato";
+    })
+});
 
-        // Add html/css properties
-        // buttons.forEach(button => {
-        //     button.style.backgroundColor = "green";
-        //     button.textContent += "😁";
-        // });
+// MouseOver + MouseOut event listener
+buttons.forEach(button => {
+    button.addEventListener("mouseover", event => {
+        event.target.style.backgroundColor = "wheat";
+    });
+});
 
-        // click event listener
-        buttons.forEach(button => {
-            button.addEventListener("click", event => {
-                event.target.style.backgroundColor = "tomato";
-            })
-        });
+buttons.forEach(button => {
+    button.addEventListener("mouseout", event => {
+        event.target.style.backgroundColor = "green";
+    });
+});
 
-        // MouseOver + MouseOut event listener
-        buttons.forEach(button => {
-            button.addEventListener("mouseover", event => {
-                event.target.style.backgroundColor = "wheat";
-            });
-        });
+// Add an element
+const newButton = document.createElement("button"); // Step 1
+newButton.textContent = "Button 5"; // Step 2
+newButton.classList = "myButtons";
+document.body.appendChild(newButton); // Step 3
 
-        buttons.forEach(button => {
-            button.addEventListener("mouseout", event => {
-                event.target.style.backgroundColor = "green";
-            });
-        });
+console.log(buttons);
 
-        // Add an element
-        const newButton = document.createElement("button"); // Step 1
-        newButton.textContent = "Button 5"; // Step 2
-        newButton.classList = "myButtons";
-        document.body.appendChild(newButton); // Step 3
+buttons = document.querySelectorAll(".myButtons");
+console.log(buttons);
 
-        console.log(buttons);
-
+// Remove an element
+buttons.forEach(button => {
+    button.addEventListener("click", event => {
+        event.target.remove();
         buttons = document.querySelectorAll(".myButtons");
         console.log(buttons);
-
-        // Remove an element
-        buttons.forEach(button => {
-            button.addEventListener("click", event => {
-                event.target.remove();
-                buttons = document.querySelectorAll(".myButtons");
-                console.log(buttons);
-            });
-        });
-        
-    
+    });
+});

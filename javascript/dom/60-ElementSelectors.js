@@ -1,4 +1,3 @@
-
         // Element Selectors =  Mehthod used to target and manipulate HTML elements
         //                      They allow you to select one or multiple HTML elements 
         //                      from the DOM 
@@ -45,6 +44,3 @@
         // foods.forEach(food => {
         //     food.style.backgroundColor = 'red';
         // })
-
-
-    
