@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: inline-block;
+            border: 2px solid lightslategray;
+            margin: 5px;
+            width: 200px;
+        }
+        .gallery .description{
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery:hover{
+            border: 2px solid rgb(38, 38, 39);
+        }
+        .gallery img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <a target="_blank" href="assets/pizza.jpg">
+            <img src="assets/pizza.jpg" alt="pizza">
+        </a>
+        <div class="description">Pizza</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/salads.jpg">
+            <img src="assets/salad.jpg" alt="salad">
+        </a>
+        <div class="description">Salad</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/soups.jpg">
+            <img src="assets/soup.jpg" alt="soup">
+        </a>
+        <div class="description">Soup</div>
+    </div>
+</body>
+
+</html>

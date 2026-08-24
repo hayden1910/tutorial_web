@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 250px;
+            border: 5px solid;
+            font-size: 13em;
+            text-align: center;
+        }
+
+        #box1 {
+            background-color: rgb(178, 184, 178);
+            /* transform: translate(120px, 150px); */
+            /* transform: rotateY(60deg); */
+            /* transform: scale(1.5); */
+            /* transform: skewX(30deg); */
+            /* transform: skewX(30deg); */
+            transform: translateX(60%) rotateZ(-45deg) scale(0.5);
+        }
+
+        img {
+          width: 30%; 
+          transform: translate(635px,-280px) rotateZ(-15deg) scale(0.6);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Hello</div>
+    <img src="assets/spider_man.png" alt="spidey">
+
+</body>
+
+</html>

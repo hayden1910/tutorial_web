@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: rgb(62, 127, 226);
+            font-size: 2.5em;
+        }
+
+        a:hover {
+            color: rgb(112, 158, 228);
+            font-size: 2.8em;
+        }
+
+        a:active {
+            color: rgb(17, 100, 224);
+            font-size: 2.2em;
+        }
+
+        a:visited {
+            color: rgb(142, 148, 156);
+        }
+
+        li span:hover {
+            background-color: yellow;
+        }
+
+        li:not(:hover) {
+            background-color: wheat;
+        }
+
+        li:nth-child(3n) {
+            background-color: greenyellow;
+        }
+
+        #greeting p {
+            background-color: crimson;
+            padding: 10px;
+            display: none;
+        }
+        #greeting:hover p{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://google.com">Google</a>
+    <hr>
+    <ul>
+        <li><span>This is #1</span></li>
+        <li>This is #2</li>
+        <li>This is #3</li>
+        <li>This is #4</li>
+        <li>This is #5</li>
+        <li>This is #6</li>
+        <li>This is #7</li>
+        <li>This is #8</li>
+        <li>This is #9</li>
+    </ul>
+    
+    <hr>
+    <div id="greeting"> Hover here
+        <p>What's up</p>
+    </div>
+</body>
+
+</html>

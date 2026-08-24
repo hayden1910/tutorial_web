@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination {
+            text-align: center;
+        }
+
+        .pagination a {
+            color: black;
+            text-decoration: none;
+            padding: 8px;
+            display: inline-block;
+        }
+
+        .pagination a.active {
+            background-color: rgb(131, 223, 131);
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: rgb(178, 182, 178);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--pagination  =   method by which a document is 
+                        separated into pages, 
+                        and numbers are given
+    -->
+    <h1>This is page #1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ratione laudantium quo voluptas nisi
+        similique dolorum ex iusto, dolore ea, provident, deleniti nemo. Vitae, modi officiis omnis voluptate accusamus
+        numquam.</p>
+    <div class="pagination">
+        <a href=""> < </a>
+        <a href="" class="active">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href=""> > </a>
+
+    </div>
+</body>
+
+</html>

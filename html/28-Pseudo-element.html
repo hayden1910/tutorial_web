@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter {
+            font-size: 2em;
+            font-style: italic;
+        }
+
+        p::first-line {
+            background-color: yellowgreen;
+        }
+
+        p::selection {
+            color: white;
+            background-color: green;
+        }
+
+        #fruit li::marker {
+            content: "✔️";
+            color: rgb(120, 100%, 64%);
+            font-size: 1.2em;
+        }
+
+        #apple::before {
+            content: "🍎";
+        }
+
+        #orange::after {
+            content: "🍊";
+        }
+
+        #banana::after {
+            content: "🍌";
+        }
+    </style>
+</head>
+
+<body>
+    <!--pseudo-element  =   keyword added after a selector
+                            that's use to style a specific
+                            parts of an element
+
+                            selector::pseudo-element
+                            h1::first-letter{}
+    -->
+    <h1>Hendrick</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto officia! Quasi tempora, cumque illum
+        maiores reiciendis qui ea consectetur possimus ratione neque quas hic quos saepe tempore quam dolores.</p>
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+    </ul>
+</body>
+
+</html>

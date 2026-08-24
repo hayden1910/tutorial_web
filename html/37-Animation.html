@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            position: relative;
+            top: 400px;
+            left: 30px;
+            /* transform: translateY(300%); */
+            animation-name: slideRight;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            animation-play-state: running;
+            animation-timing-function: linear;/*ease-in-out*/
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(300%);
+            }
+        }
+
+        @keyframes slideRight {
+            to {
+                transform: translateX(300%);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(300%);
+            }
+        }
+
+        @keyframes slideDown {
+            to {
+                transform: translateY(300%);
+            }
+        }
+
+        @keyframes rotate {
+            50% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        @keyframes grow {
+            20% {
+                transform: scale(1.5, 1.5)
+            }
+        }
+
+        @keyframes shrink {
+            50% {
+                transform: scale(0.5, 0.5)
+            }
+        }
+
+        @keyframes fade {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: rgb(219, 219, 149);
+            }
+            20% {
+                background-color: rgb(211, 211, 91);
+            }
+            40% {
+                background-color: rgb(221, 208, 31);
+            }
+            40% {
+                background-color: rgb(250, 205, 6);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/spider-man.gif" alt="">
+</body>
+
+</html>

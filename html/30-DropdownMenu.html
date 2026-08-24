@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown button {
+            background-color: brown;
+            color: blue;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .dropdown .content {
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            min-width: 100px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .dropdown:hover .content {
+            display: block;
+        }
+
+        .dropdown:hover button {
+            background-color: powderblue;
+        }
+
+        .dropdown a:hover {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button>Fruit</button>
+        <div class="content">
+            <a href="">Lychee</a>
+            <a href="">Longan</a>
+            <a href="">Mangosteen</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam odit iusto cumque molestias, rem vitae
+        tenetur? Necessitatibus facere et, quas dolore obcaecati quis aliquid ullam, asperiores temporibus quam quisquam
+        deleniti.</p>
+</body>
+
+</html>

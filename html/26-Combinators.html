@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container1 {
+            border: 2px solid;
+        }
+
+        #container1 p {
+            background-color: yellow;
+        }
+
+        #container1>p {
+            font-weight: bold;
+            color: red;
+        }
+
+        #container1~p {
+            background-color: blueviolet;
+        }
+
+        #container2+p {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <!--combinators   =     explains the relationship between listed selectors
+                    [space] = descendant   
+                        >   = child
+                        ~   = general sibling
+                        +   = adjacent sibling
+    -->
+    <div id="container1">
+        <p>this is #1</p>
+        <p>this is #2</p>
+        <div>
+            <p>this is #3</p>
+        </div>
+    </div>
+    <div id="container2">
+        <p>this is #4</p>
+        <p>this is #5</p>
+    </div>
+    <p>this is #8</p>
+
+    <p>this is #6</p>
+    <p>this is #7</p>
+
+
+</body>
+
+</html>
